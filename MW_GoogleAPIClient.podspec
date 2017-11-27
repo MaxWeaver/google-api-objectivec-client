@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MW_GoogleAPIClient"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Google APIs Client Library for Objective-C"
   s.description  = <<-DESC
       Written by Google, this library is a flexible and efficient Objective-C
@@ -12,20 +12,20 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = 'Google Inc.'
   s.ios.deployment_target = '7.0'
-  s.source       = { :git => "https://github.com/MaxWeaver/google-api-objectivec-client.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/MaxWeaver/google-api-objectivec-client.git", :tag => "0.0.2" }
   s.requires_arc = false
 
   s.subspec 'Core' do |sp|
     sp.source_files = 'Source/GTLDefines.h',
-	'Source/HTTPFetcher/*.{h,m}',
-                    	'Source/Objects/*.{h,m}',
-                    	'Source/Utilities/*.{h,m}'
+		      'Source/HTTPFetcher/*.{h,m}',
+                      'Source/Objects/*.{h,m}',
+                      'Source/Utilities/*.{h,m}'
     sp.exclude_files = 'Source/HTTPFetcher/Drive/Generated/GTMGatherInputStream.h',
-	'Source/HTTPFetcher/Drive/Generated/GTMGatherInputStream.m',
-	'Source/HTTPFetcher/Drive/Generated/GTMMIMEDocument.h',
-	'Source/HTTPFetcher/Drive/Generated/GTMMIMEDocument.m',
-	'Source/HTTPFetcher/Drive/Generated/GTMReadMonitorInputStream.h',
-	'Source/HTTPFetcher/Drive/Generated/GTMReadMonitorInputStream.m'
+		       'Source/HTTPFetcher/Drive/Generated/GTMGatherInputStream.m',
+		       'Source/HTTPFetcher/Drive/Generated/GTMMIMEDocument.h',
+		       'Source/HTTPFetcher/Drive/Generated/GTMMIMEDocument.m',
+		       'Source/HTTPFetcher/Drive/Generated/GTMReadMonitorInputStream.h',
+		       'Source/HTTPFetcher/Drive/Generated/GTMReadMonitorInputStream.m'
   end
   s.default_subspec = 'Core'
 

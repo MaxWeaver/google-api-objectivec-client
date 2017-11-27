@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
 		      'Source/HTTPFetcher/*.{h,m}',
                       'Source/Objects/*.{h,m}',
                       'Source/Utilities/*.{h,m}'
-    sp.exclude_files = 'Source/HTTPFetcher/Drive/Generated/GTMGatherInputStream.h',
-		       'Source/HTTPFetcher/Drive/Generated/GTMGatherInputStream.m',
-		       'Source/HTTPFetcher/Drive/Generated/GTMMIMEDocument.h',
-		       'Source/HTTPFetcher/Drive/Generated/GTMMIMEDocument.m',
-		       'Source/HTTPFetcher/Drive/Generated/GTMReadMonitorInputStream.h',
-		       'Source/HTTPFetcher/Drive/Generated/GTMReadMonitorInputStream.m'
+    sp.exclude_files = 'Source/HTTPFetcher/GTMGatherInputStream.h',
+		       'Source/HTTPFetcher/GTMGatherInputStream.m',
+		       'Source/HTTPFetcher/GTMMIMEDocument.h',
+		       'Source/HTTPFetcher/GTMMIMEDocument.m',
+		       'Source/HTTPFetcher/GTMReadMonitorInputStream.h',
+		       'Source/HTTPFetcher/GTMReadMonitorInputStream.m'
   end
   s.default_subspec = 'Core'
 
